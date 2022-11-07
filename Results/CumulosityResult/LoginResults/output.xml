@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221106 13:13:58.580" rpa="false" schemaversion="3">
+<suite id="s1" name="DashboardLogin" source="C:\Users\C9947999\PycharmProjects\BLIM Automation\TestCases\CumulosityDashboard\FunctionalTestSuite\DashboardLogin.robot">
+<test id="s1-t1" name="LoginTest" line="10">
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_implicit_wait}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20221106 13:13:58.964" level="INFO">${default_implicit_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20221106 13:13:58.963" endtime="20221106 13:13:58.964"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>60s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221106 13:13:58.964" endtime="20221106 13:13:58.964"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${custom_implicit_wait}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20221106 13:13:58.964" level="INFO">${custom_implicit_wait} = 1 minute</msg>
+<status status="PASS" starttime="20221106 13:13:58.964" endtime="20221106 13:13:58.964"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221106 13:13:58.965" level="INFO">Opening browser 'chrome' to base url 'https://eatonnubisnet-qa.emea.cumulocity.com/'.</msg>
+<status status="PASS" starttime="20221106 13:13:58.965" endtime="20221106 13:14:04.887"/>
+</kw>
+<kw name="loginToCumulosityDashboard">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221106 13:14:04.888" endtime="20221106 13:14:05.014"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:07.027" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:05.014" endtime="20221106 13:14:07.027"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/c8y-ui-root/c8y-bootstrap/c8y-cookie-banner/div/div/div/div[3]/div/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:07.027" level="INFO">Clicking element 'xpath:/html/body/c8y-ui-root/c8y-bootstrap/c8y-cookie-banner/div/div/div/div[3]/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20221106 13:14:07.027" endtime="20221106 13:14:15.458"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:17.473" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:15.458" endtime="20221106 13:14:17.473"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/c8y-ui-root/c8y-bootstrap/c8y-login/div/div/c8y-credentials/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:17.473" level="INFO">Clicking element 'xpath:/html/body/c8y-ui-root/c8y-bootstrap/c8y-login/div/div/c8y-credentials/div/button'.</msg>
+<status status="PASS" starttime="20221106 13:14:17.473" endtime="20221106 13:14:26.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:28.164" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:26.153" endtime="20221106 13:14:28.164"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="idp-discovery-username"]</arg>
+<arg>test_automation_qa_0@machinery-monitoring.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:28.164" level="INFO">Typing text 'test_automation_qa_0@machinery-monitoring.com' into text field 'xpath://*[@id="idp-discovery-username"]'.</msg>
+<status status="PASS" starttime="20221106 13:14:28.164" endtime="20221106 13:14:28.255"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:30.257" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:28.255" endtime="20221106 13:14:30.257"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="idp-discovery-submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:30.257" level="INFO">Clicking element 'xpath://*[@id="idp-discovery-submit"]'.</msg>
+<status status="PASS" starttime="20221106 13:14:30.257" endtime="20221106 13:14:30.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:40.326" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:30.313" endtime="20221106 13:14:40.326"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/main/div[2]/div/div/form/div[1]/div[2]/div/div[2]/span/input</arg>
+<arg>AutomationTest@2022</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:40.326" level="INFO">Typing text 'AutomationTest@2022' into text field 'xpath:/html/body/div[2]/main/div[2]/div/div/form/div[1]/div[2]/div/div[2]/span/input'.</msg>
+<status status="PASS" starttime="20221106 13:14:40.326" endtime="20221106 13:14:40.400"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:42.408" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:40.401" endtime="20221106 13:14:42.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/main/div[2]/div/div/form/div[2]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:42.408" level="INFO">Clicking element 'xpath:/html/body/div[2]/main/div[2]/div/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20221106 13:14:42.408" endtime="20221106 13:14:42.456"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 13:14:52.468" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221106 13:14:42.456" endtime="20221106 13:14:52.468"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/c8y-ui-root/c8y-bootstrap/div/c8y-navigator-outlet/nav/ul/c8y-navigator-node-display[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 13:14:52.468" level="INFO">Clicking element 'xpath:/html/body/c8y-ui-root/c8y-bootstrap/div/c8y-navigator-outlet/nav/ul/c8y-navigator-node-display[2]/div/a'.</msg>
+<status status="PASS" starttime="20221106 13:14:52.468" endtime="20221106 13:15:01.369"/>
+</kw>
+<status status="PASS" starttime="20221106 13:14:04.888" endtime="20221106 13:15:01.369"/>
+</kw>
+<status status="PASS" starttime="20221106 13:13:58.963" endtime="20221106 13:15:01.369"/>
+</test>
+<status status="PASS" starttime="20221106 13:13:58.587" endtime="20221106 13:15:01.370"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="DashboardLogin">DashboardLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
